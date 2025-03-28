@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/boder"
+    android:padding="@dimen/_10sdp"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_no"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/idOderNo"
+                android:text="--"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#0E151F" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/rating"
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="---"
+                android:id="@+id/idRating"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#0E151F" />
+
+
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Customer details"
+                 android:textSize="14sp"
+                 android:textStyle="bold"
+                 android:textColor="?attr/colorPrimaryDark" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:id="@+id/nameCustomer"
+                 android:text="Nikiunj Kanani"
+                 android:textSize="14sp"
+                 android:textColor="#0E151F" />-->
+
+
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="Album url"
+                 android:textSize="14sp"
+                 android:textStyle="bold"
+                 android:textColor="?attr/colorPrimaryDark" />-->
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <!--   <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Order No"
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   android:textColor="?attr/colorPrimaryDark" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:id="@+id/idOderNo"
+                   android:text="#00108"
+                   android:textSize="14sp"
+                   android:textColor="#0E151F" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lead_details"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/leadDetailsID"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#0E151F" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/enquiry_details"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idEnquiryDetails"
+                android:layout_marginTop="5dp"
+                android:text="---"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#0E151F" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/idStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="--"
+                android:textColor="#0E151F"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/message"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idMessage"
+                android:layout_marginTop="5dp"
+                android:text="--"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#0E151F" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimaryDark" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/sky"
+            android:textAllCaps="false"
+            android:id="@+id/btnAccept"
+            android:text="@string/accept"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/sky"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:id="@+id/btnReject"
+            android:text="@string/reject"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

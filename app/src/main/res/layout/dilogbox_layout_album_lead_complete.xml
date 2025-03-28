@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/closeId"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/Liner">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/complete_album_lead"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner_service">
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/etInvoiceNumberID"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/id_invoice"
+            android:textSize="14sp"
+            android:hint="@string/enter_invoice_number"
+            android:textColorHint="#848484"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="#F7F8FA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/id_invoice"
+            android:src="@drawable/ic_invoice"
+            android:layout_width="32dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner_service">
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/etAmountID"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/id_amount"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:hint="@string/enter_amount"
+            android:textColorHint="#848484"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="#F7F8FA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/id_amount"
+            android:src="@drawable/ic_invoice"
+            android:layout_width="32dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumNoteId"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/complete_album_lead"
+        android:textStyle="bold"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/SubmitId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:text="@string/submit"
+        android:background="@drawable/boder_with_background_sky"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+
+
+
+
+</LinearLayout>

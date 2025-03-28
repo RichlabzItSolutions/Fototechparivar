@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/login_background"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <!--     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="5dp"
+                         android:layout_marginRight="10dp"
+                         android:textSize="31sp"
+                         android:textColor="@color/black"
+                         android:layout_marginTop="10dp"
+                         android:gravity="right"
+                         android:text="Logout"
+                         android:textStyle="bold"/>-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="@dimen/_60sdp"
+                    app:cardElevation="@dimen/_6sdp"
+                    android:id="@+id/fab"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/logoId"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_home_screen_logo"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idFirstName"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Billing Master"
+                    android:textStyle="bold"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:id="@+id/IdNewBills"
+                                android:background="@drawable/dashboard_bg"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_15sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:id="@+id/IdNewBillImage"
+                                    app:srcCompat="@drawable/ic_new_bill" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/IdNewBillName"
+                                    android:textColor="@color/black"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold"
+                                    android:text="@string/new_bill" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:id="@+id/idViewBills"
+                                android:background="@drawable/dashboard_bg"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_15sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:id="@+id/IdViewBillsImage"
+                                    app:srcCompat="@drawable/ic_view_invoice" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/IdViewBillsName"
+                                    android:textColor="@color/black"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:text="@string/view_bill" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:id="@+id/IdLead"
+                                android:background="@drawable/dashboard_bg"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_15sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:id="@+id/IdLeadsImage"
+                                    app:srcCompat="@drawable/ic_leads" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/IdLeadsName"
+                                    android:textColor="@color/black"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:text="@string/leads" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_110sdp"                                android:id="@+id/IdReports"
+                                android:background="@drawable/dashboard_bg"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_15sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:id="@+id/IdReportsImage"
+                                    app:srcCompat="@drawable/ic_reports" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/IdReportsName"
+                                    android:textColor="@color/black"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:text="@string/reports" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

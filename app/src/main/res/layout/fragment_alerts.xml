@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.AlertsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Coming Soon"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:id="@+id/back"
+            android:padding="6dp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="View bills"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="35dp"
+            android:id="@+id/notificaionId"
+            android:src="@drawable/ic_notificaion"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="From date"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            &lt;!&ndash;<EditText
+                android:id="@+id/et_fromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_calendar"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="#848484"
+                android:textColorHint="#848484"
+                android:drawablePadding="10dp"
+                android:background="@drawable/rounded_corner_service"
+                android:hint="Select date"
+                android:inputType="date" />&ndash;&gt;
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/rounded_corner_service">
+
+                &lt;!&ndash; INPUT &ndash;&gt;
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_fromDate"
+                    android:layout_marginLeft="-10dp"
+                    android:hint="From Date"
+                    android:paddingTop="10dp"
+                    android:textSize="14dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="#F7F8FA"
+                   />
+
+                &lt;!&ndash; ICON &ndash;&gt;
+                <ImageView
+                    android:id="@+id/calender_icon"
+                    android:src="@drawable/icon_calendar"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="To date"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/rounded_corner_service">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_toDate"
+                    android:layout_marginLeft="-10dp"
+                    android:hint="From Date"
+                    android:paddingTop="10dp"
+                    android:textSize="14dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="#F7F8FA" />
+
+                <ImageView
+                    android:id="@+id/calender_icons"
+                    android:src="@drawable/icon_calendar"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="#231F20"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/viewBillrecylerview"/>-->
+
+</LinearLayout>

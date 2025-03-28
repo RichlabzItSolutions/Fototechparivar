@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".activity.ReportsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:id="@+id/back"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/reports"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:id="@+id/notificaionId"
+            android:src="@drawable/ic_notificaion"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/from_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <!--<EditText
+                android:id="@+id/et_fromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_calendar"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="#848484"
+                android:textColorHint="#848484"
+                android:drawablePadding="10dp"
+                android:background="@drawable/rounded_corner_service"
+                android:hint="Select date"
+                android:inputType="date" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/la_fromDate"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/rounded_corner_service">
+
+                <!-- INPUT -->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:id="@+id/et_fromDate"
+                    android:focusable="false"
+                    android:hint="@string/from_date"
+                    android:textSize="@dimen/_13sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:background="#F7F8FA"
+                    />
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/calender_icon"
+                    android:src="@drawable/icon_calendar"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_26sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/to_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/la_toDate"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/rounded_corner_service">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_toDate"
+                    android:hint="@string/to_date"
+                    android:focusable="false"
+                    android:textSize="@dimen/_13sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:background="#F7F8FA" />
+
+                <ImageView
+                    android:id="@+id/calenders_icon"
+                    android:src="@drawable/icon_calendar"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_26sdp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/generate"
+        android:textColor="@color/white"
+        android:background="#231F20"
+        android:textSize="@dimen/_14sdp" />
+
+
+    <ImageView
+        android:src="@drawable/icon_report_dashbord"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_230sdp" />
+
+</LinearLayout>

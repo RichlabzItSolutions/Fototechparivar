@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/Alerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Alerts"
+        android:icon="@drawable/ic_alerts_white"/>
+    <item
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Help"
+        android:icon="@drawable/ic_help_white"/>
+    <item
+      android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:title="MY Account"
+      android:icon="@drawable/ic_profile"/>
+</menu>
